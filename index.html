@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierre Fraser | Sociologue, Linguist, Cinéaste & Essayiste</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slateCustom: '#1e293b',
+                        anthracite: '#0f172a',
+                        institutionBlue: '#2563eb',
+                        offWhite: '#f8fafc',
+                        paper: '#f1f5f9',
+                        borderSlate: '#cbd5e1'
+                    },
+                    fontFamily: {
+                        serif: ['Georgia', 'Cambria', 'Times New Roman', 'serif'],
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Academic / Professional Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8fafc;
+            color: #0f172a;
+        }
+        .academic-shadow {
+            box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.05), 0 2px 4px -1px rgba(15, 23, 42, 0.03);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-institutionBlue selection:text-white">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-offWhite/95 backdrop-blur-md border-b border-borderSlate">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#accueil" class="group">
+                <span class="font-serif text-2xl font-bold tracking-tight text-anthracite group-hover:text-institutionBlue transition-colors">Pierre Fraser</span>
+                <span class="block text-xs uppercase tracking-widest text-slate-600 font-medium">Sociologue · Essayiste · Cinéaste</span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-700">
+                <a href="#accueil" class="hover:text-institutionBlue transition-colors">Accueil</a>
+                <a href="#biographie" class="hover:text-institutionBlue transition-colors">Biographie</a>
+                <a href="#publications" class="hover:text-institutionBlue transition-colors">Publications & Essais</a>
+                <a href="#documentaires" class="hover:text-institutionBlue transition-colors">Documentaires</a>
+                <a href="#reseaueportails" class="hover:text-institutionBlue transition-colors">Réseau & Portails</a>
+                <a href="#contact" class="px-4 py-2 bg-anthracite text-offWhite rounded hover:bg-institutionBlue transition-colors shadow-sm">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-anthracite focus:outline-none p-2" aria-label="Menu">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-offWhite border-b border-borderSlate px-6 py-4 space-y-3">
+            <a href="#accueil" class="block text-sm font-medium text-slate-700 hover:text-institutionBlue">Accueil</a>
+            <a href="#biographie" class="block text-sm font-medium text-slate-700 hover:text-institutionBlue">Biographie</a>
+            <a href="#publications" class="block text-sm font-medium text-slate-700 hover:text-institutionBlue">Publications & Essais</a>
+            <a href="#documentaires" class="block text-sm font-medium text-slate-700 hover:text-institutionBlue">Documentaires</a>
+            <a href="#reseaueportails" class="block text-sm font-medium text-slate-700 hover:text-institutionBlue">Réseau & Portails</a>
+            <a href="#contact" class="block text-sm font-medium text-offWhite bg-anthracite text-center py-2 rounded">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-6xl mx-auto px-6 space-y-24 py-12">
+
+        <!-- Section Accueil / Hero -->
+        <section id="accueil" class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center pt-8">
+            <div class="md:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-paper border border-borderSlate text-xs font-semibold text-institutionBlue uppercase tracking-wider">
+                    <i class="fa-solid fa-graduation-cap"></i> Recherche & Édition Indépendante
+                </div>
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal text-anthracite leading-tight">
+                    Analyser le réel, documenter la culture, éclairer l'époque.
+                </h1>
+                <p class="text-lg text-slate-600 leading-relaxed font-light">
+                    Bienvenue sur le portail officiel de <strong class="font-semibold text-anthracite">Pierre Fraser</strong>. Sociologue, linguiste, cinéaste indépendant et essayiste, ses travaux explorent l'analyse critique de la société contemporaine, les mutations culturelles québécoises et la sociologie visuelle.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#publications" class="px-6 py-3 bg-institutionBlue text-white font-medium rounded hover:bg-blue-700 transition-colors shadow-sm flex items-center gap-2">
+                        <span>Explorer les Essais</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <a href="#biographie" class="px-6 py-3 bg-paper border border-borderSlate text-anthracite font-medium rounded hover:bg-slate-200 transition-colors">
+                        Parcours Académique
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:col-span-5 flex justify-center">
+                <div class="w-full max-w-sm bg-white p-6 rounded-lg border border-borderSlate academic-shadow relative">
+                    <div class="absolute -top-3 -right-3 bg-institutionBlue text-white p-2 rounded-full shadow">
+                        <i class="fa-solid fa-book-open text-sm"></i>
+                    </div>
+                    <div class="aspect-[4/5] bg-paper rounded flex flex-col items-center justify-center p-6 text-center border border-dashed border-borderSlate">
+                        <i class="fa-solid fa-user-tie text-6xl text-slate-400 mb-4"></i>
+                        <span class="font-serif text-xl font-medium text-anthracite">Pierre Fraser</span>
+                        <span class="text-xs text-slate-500 mt-1">Sociologue & Néo-éditeur</span>
+                        <div class="mt-6 pt-6 border-t border-borderSlate w-full text-xs text-slate-600 space-y-1">
+                            <p><i class="fa-solid fa-bookmark text-institutionBlue mr-1"></i> Les Cahiers du Réel</p>
+                            <p><i class="fa-solid fa-video text-institutionBlue mr-1"></i> Sociologie Visuelle Média</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Biographie Rigoureuse -->
+        <section id="biographie" class="bg-white border border-borderSlate rounded-lg p-8 sm:p-12 academic-shadow">
+            <div class="max-w-3xl space-y-6">
+                <div class="border-l-4 border-institutionBlue pl-4">
+                    <span class="text-xs uppercase tracking-widest text-institutionBlue font-semibold">Parcours & Vocation</span>
+                    <h2 class="font-serif text-3xl font-normal text-anthracite mt-1">Biographie Académique & Intellectuelle</h2>
+                </div>
+                
+                <p class="text-slate-700 leading-relaxed">
+                    <strong class="text-anthricite font-semibold">Pierre Fraser</strong> mène une trajectoire intellectuelle transversale au carrefour de la sociologie, de la linguistique et de la réalisation documentaire. Ses recherches examinent les structures invisibles des discours sociaux, les transformations anthropologiques de notre époque ainsi que la transmission mémorielle au Québec.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+                    <div class="p-5 bg-paper rounded border border-borderSlate space-y-2">
+                        <div class="text-institutionBlue font-semibold text-sm flex items-center gap-2">
+                            <i class="fa-solid fa-pen-nib"></i> Néo-Édition & Diffusion
+                        </div>
+                        <p class="text-sm text-slate-600">
+                            Acteur engagé du monde éditorial indépendant à travers la direction de structures novatrices telles que <strong class="text-anthracite">Les Cahiers du Réel</strong> et <strong class="text-anthracite">Sociologie Visuelle Média</strong>, favorisant une parole critique affranchie des logiques marchandes de masse.
+                        </p>
+                    </div>
+
+                    <div class="p-5 bg-paper rounded border border-borderSlate space-y-2">
+                        <div class="text-institutionBlue font-semibold text-sm flex items-center gap-2">
+                            <i class="fa-solid fa-eye"></i> Regard Sociologique & Visuel
+                        </div>
+                        <p class="text-sm text-slate-600">
+                            Fondateur de portails de référence en photosociologie et recherche visuelle (<code class="text-xs bg-white px-1 py-0.5 rounded border border-borderSlate">photosociete.com</code>, <code class="text-xs bg-white px-1 py-0.5 rounded border border-borderSlate">sociologievisuelle.com</code>), articulant l'image et l'analyse sociologique rigoureuse.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Publications & Essais -->
+        <section id="publications" class="space-y-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-borderSlate pb-4">
+                <div>
+                    <span class="text-xs uppercase tracking-widest text-institutionBlue font-semibold">Œuvres Écrites</span>
+                    <h2 class="font-serif text-3xl font-normal text-anthracite mt-1">Publications & Essais</h2>
+                </div>
+                <p class="text-sm text-slate-500 max-w-md">
+                    Ouvrages d'analyse critique, essais philosophiques et sociologiques consacrés aux enjeux de notre modernité.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Livre Vedette -->
+                <div class="bg-white border border-borderSlate rounded-lg p-6 academic-shadow flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 bg-paper rounded flex items-center justify-center text-institutionBlue text-xl border border-borderSlate">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-600 uppercase tracking-wider">Essai Principal</span>
+                        <h3 class="font-serif text-xl font-medium text-anthracite">Petit traité de survie en temps de catastrophe</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Une réflexion critique et lucide sur les dérives technocratiques, l'accélération sociale et les repères existentiels à retrouver face aux crises structurelles de l'époque contemporaine.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-borderSlate flex items-center justify-between text-xs text-slate-600">
+                        <span>Éditions Les Cahiers du Réel</span>
+                        <span class="font-semibold text-anthracite">Essai</span>
+                    </div>
+                </div>
+
+                <!-- Autre publication -->
+                <div class="bg-white border border-borderSlate rounded-lg p-6 academic-shadow flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 bg-paper rounded flex items-center justify-center text-institutionBlue text-xl border border-borderSlate">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-600 uppercase tracking-wider">Sociologie & Culture</span>
+                        <h3 class="font-serif text-xl font-medium text-anthracite">Études sur le discours social et littéraire</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Analyses approfondies sur la construction discursive de l'identité québécoise, la structure de la langue et la portée idéologique des formes textuelles au sein de la sphère publique.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-borderSlate flex items-center justify-between text-xs text-slate-600">
+                        <span>Recherches Linguistiques</span>
+                        <span class="font-semibold text-anthracite">Monographie</span>
+                    </div>
+                </div>
+
+                <!-- Néo-édition -->
+                <div class="bg-white border border-borderSlate rounded-lg p-6 academic-shadow flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 bg-paper rounded flex items-center justify-center text-institutionBlue text-xl border border-borderSlate">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-600 uppercase tracking-wider">Catalogue Actuel</span>
+                        <h3 class="font-serif text-xl font-medium text-anthracite">Collection des Cahiers du Réel</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Direction d'ouvrages collectifs et monographies privilégiant l'enquête sociologique de terrain, la critique des médias et l'humanisme méthodologique.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-borderSlate flex items-center justify-between text-xs text-slate-600">
+                        <span>Direction éditoriale</span>
+                        <span class="font-semibold text-anthracite">Collection</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Documentaires -->
+        <section id="documentaires" class="bg-anthracite text-offWhite rounded-lg p-8 sm:p-12 space-y-8">
+            <div class="max-w-2xl space-y-4">
+                <span class="text-xs uppercase tracking-widest text-blue-400 font-semibold">Cinéaste Indépendant</span>
+                <h2 class="font-serif text-3xl font-normal text-white">Œuvres Documentaires</h2>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    Le cinéma documentaire comme extension de la recherche sociologique : explorer la corporéité, l'espace, la parole vive et l'héritage intellectuel du Québec à travers l'image animée.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+                <!-- Film 1 -->
+                <div class="bg-slateCustom/80 border border-slate-700 rounded-lg p-6 space-y-4">
+                    <div class="flex items-center justify-between">
+                        <span class="px-2.5 py-1 bg-institutionBlue/20 text-blue-400 rounded text-xs font-medium border border-institutionBlue/30">Long-métrage documentaire</span>
+                        <i class="fa-solid fa-film text-slate-400"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-medium text-white">L'Aventure du corps</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Une immersion sociologique et philosophique dans la perception corporelle, les normes sociales qui le régissent et les figures de la corporéité dans la modernité.
+                    </p>
+                    <div class="pt-2 text-xs text-slate-400 flex items-center gap-4">
+                        <span><i class="fa-regular fa-clock mr-1"></i> Film indépendant</span>
+                        <span><i class="fa-solid fa-clapperboard mr-1"></i> Réalisation Pierre Fraser</span>
+                    </div>
+                </div>
+
+                <!-- Film 2 -->
+                <div class="bg-slateCustom/80 border border-slate-700 rounded-lg p-6 space-y-4">
+                    <div class="flex items-center justify-between">
+                        <span class="px-2.5 py-1 bg-institutionBlue/20 text-blue-400 rounded text-xs font-medium border border-institutionBlue/30">Documentaire culturel</span>
+                        <i class="fa-solid fa-video text-slate-400"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-medium text-white">Voyage en littérature québécoise</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Un périple à travers les figures tutélaires, les paysages textuels et la mémoire vive des écrivains qui ont forgé l'imaginaire littéraire national du Québec.
+                    </p>
+                    <div class="pt-2 text-xs text-slate-400 flex items-center gap-4">
+                        <span><i class="fa-regular fa-clock mr-1"></i> Essai visuel</span>
+                        <span><i class="fa-solid fa-clapperboard mr-1"></i> Sociologie Visuelle Média</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Réseau & Portails -->
+        <section id="reseaueportails" class="space-y-8">
+            <div class="border-b border-borderSlate pb-4">
+                <span class="text-xs uppercase tracking-widest text-institutionBlue font-semibold">Plateformes & Diffusion Numérique</span>
+                <h2 class="font-serif text-3xl font-normal text-anthracite mt-1">Réseau & Portails Web</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Portal 1 -->
+                <div class="bg-white border border-borderSlate rounded-lg p-6 academic-shadow flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="text-institutionBlue text-lg font-semibold flex items-center gap-2">
+                            <i class="fa-solid fa-camera-retro"></i> Photosociété
+                        </div>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Portail de référence dédié à la photosociologie et à l'analyse critique de l'image photographique dans l'espace social.
+                        </p>
+                    </div>
+                    <a href="https://photosociete.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-institutionBlue hover:underline pt-2">
+                        <span>photosociete.com</span>
+                        <i class="fa-solid fa-external-link text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Portal 2 -->
+                <div class="bg-white border border-borderSlate rounded-lg p-6 academic-shadow flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="text-institutionBlue text-lg font-semibold flex items-center gap-2">
+                            <i class="fa-solid fa-eye"></i> Sociologie Visuelle
+                        </div>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Plateforme d'investigation visuelle, de méthodologies de recherche par l'image et de documentation des réalités contemporaines.
+                        </p>
+                    </div>
+                    <a href="https://sociologievisuelle.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-institutionBlue hover:underline pt-2">
+                        <span>sociologievisuelle.com</span>
+                        <i class="fa-solid fa-external-link text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Portal 3 -->
+                <div class="bg-white border border-borderSlate rounded-lg p-6 academic-shadow flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="text-institutionBlue text-lg font-semibold flex items-center gap-2">
+                            <i class="fa-solid fa-book-bookmark"></i> Les Cahiers du Réel
+                        </div>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Maison d'édition indépendante axée sur l'essai critique, la sociologie de terrain et la réflexion intellectuelle affranchie.
+                        </p>
+                    </div>
+                    <span class="text-xs font-medium text-slate-600 pt-2 flex items-center gap-1">
+                        <i class="fa-solid fa-bookmark text-institutionBuilding"></i> Structure éditoriale
+                    </span>
+                </div>
+
+                <!-- Portal 4 -->
+                <div class="bg-white border border-borderSlate rounded-lg p-6 academic-shadow flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="text-institutionBlue text-lg font-semibold flex items-center gap-2">
+                            <i class="fa-solid fa-clapperboard"></i> Sociologie Visuelle Média
+                        </div>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Structure de production et de diffusion de documentaires indépendants et d'essais vidéographiques.
+                        </p>
+                    </div>
+                    <span class="text-xs font-medium text-slate-600 pt-2 flex items-center gap-1">
+                        <i class="fa-solid fa-video text-institutionBlue"></i> Production indépendante
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact & Communications -->
+        <section id="contact" class="bg-white border border-borderSlate rounded-lg p-8 sm:p-12 academic-shadow">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                <div class="md:col-span-5 space-y-4">
+                    <span class="text-xs uppercase tracking-widest text-institutionBlue font-semibold">Correspondance</span>
+                    <h2 class="font-serif text-3xl font-normal text-anthracite">Contact & Communications</h2>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Pour toute demande de collaboration académique, de conférences, d'entrevues relatives aux essais ou de diffusion des documentaires, veuillez utiliser le formulaire ci-contre.
+                    </p>
+                    <div class="pt-4 space-y-3 text-sm text-slate-700">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded bg-paper flex items-center justify-center text-institutionBlue border border-borderSlate">
+                                <i class="fa-solid fa-envelope text-xs"></i>
+                            </div>
+                            <span>contact@pierrefraser-sociologue.com</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded bg-paper flex items-center justify-center text-institutionBlue border border-borderSlate">
+                                <i class="fa-solid fa-location-dot text-xs"></i>
+                            </div>
+                            <span>Québec, Canada</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-7">
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="space-y-1">
+                                <label class="block text-xs font-medium text-slate-700">Nom complet</label>
+                                <input type="text" required class="w-full px-4 py-2.5 bg-paper border border-borderSlate rounded text-sm focus:outline-none focus:border-institutionBlue transition-colors">
+                            </div>
+                            <div class="space-y-1">
+                                <label class="block text-xs font-medium text-slate-700">Courriel professionnel</label>
+                                <input type="email" required class="w-full px-4 py-2.5 bg-paper border border-borderSlate rounded text-sm focus:outline-none focus:border-institutionBlue transition-colors">
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <label class="block text-xs font-medium text-slate-700">Objet de la demande</label>
+                            <input type="text" required class="w-full px-4 py-2.5 bg-paper border border-borderSlate rounded text-sm focus:outline-none focus:border-institutionBlue transition-colors">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="block text-xs font-medium text-slate-700">Message</label>
+                            <textarea rows="4" required class="w-full px-4 py-2.5 bg-paper border border-borderSlate rounded text-sm focus:outline-none focus:border-institutionBlue transition-colors"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3 bg-anthracite text-offWhite font-medium rounded hover:bg-institutionBlue transition-colors text-sm shadow-sm">
+                            Envoyer le message
+                        </button>
+                    </form>
+                    <div id="form-success" class="hidden mt-4 p-4 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded text-sm">
+                        Votre message a été transmis avec succès. Une réponse vous sera acheminée dans les meilleurs délais.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Académique -->
+    <footer class="bg-anthracite text-slate-400 border-t border-slate-800 mt-24 py-12">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-xs">
+            <div>
+                <p class="font-serif text-white font-medium text-sm">Pierre Fraser</p>
+                <p class="text-slate-400 mt-1">Sociologue, Linguist, Cinéaste & Essayiste</p>
+            </div>
+            <div class="flex flex-wrap gap-6 text-slate-400">
+                <a href="#accueil" class="hover:text-white transition-colors">Accueil</a>
+                <a href="#biographie" class="hover:text-white transition-colors">Biographie</a>
+                <a href="#publications" class="hover:text-white transition-colors">Publications</a>
+                <a href="#documentaires" class="hover:text-white transition-colors">Documentaires</a>
+                <a href="#reseaueportails" class="hover:text-white transition-colors">Portails</a>
+            </div>
+            <div class="text-right text-slate-400">
+                <p>&copy; 2026 Pierre Fraser. Tous droits réservés.</p>
+                <p class="mt-1">Les Cahiers du Réel & Sociologie Visuelle Média</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Safe form submission without alert()
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = document.getElementById('contact-form');
+            const successBox = document.getElementById('form-success');
+            
+            form.reset();
+            successBox.classList.remove('hidden');
+            
+            setTimeout(() => {
+                successBox.classList.add('hidden');
+            }, 6000);
+        }
+    </script>
+</body>
+</html>
